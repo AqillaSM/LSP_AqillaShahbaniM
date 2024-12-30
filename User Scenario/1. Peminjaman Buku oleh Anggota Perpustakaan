@@ -1,15 +1,15 @@
-### **Skenario User Testing: Peminjaman Buku oleh Anggota Perpustakaan**
+# User Testing: Peminjaman Buku oleh Anggota Perpustakaan
 
-#### **Deskripsi**
-Pengujian dilakukan untuk memastikan proses peminjaman buku oleh seorang anggota berjalan sesuai alur yang diharapkan, termasuk fitur pencarian, pemilihan buku, penambahan buku ke daftar, penghapusan buku dari daftar, dan pengajuan peminjaman.
+### Deskripsi
+Pengujian ini bertujuan untuk memastikan proses peminjaman buku oleh seorang anggota berjalan sesuai alur yang diharapkan, mencakup pencarian anggota, pemilihan buku, penghapusan buku dari daftar, dan pengajuan peminjaman.
 
 ---
 
-### **Langkah-Langkah**
+### Langkah-Langkah
 
 1. **Memulai Proses Peminjaman**
-   - **Aksi**: Klik tombol `Peminjaman Buku` pada menu di kiri.
-   - **Ekspektasi**: Sistem menampilkan halaman untuk memulai proses peminjaman.
+   - **Aksi**: Klik tombol `Peminjaman Buku`.
+   - **Ekspektasi**: Sistem menampilkan dialog atau halaman untuk memulai proses peminjaman.
 
 2. **Verifikasi Keanggotaan**
    - **Aksi**: Klik tombol `Ya` pada pertanyaan "Apakah Anda seorang anggota?".
@@ -45,11 +45,18 @@ Pengujian dilakukan untuk memastikan proses peminjaman buku oleh seorang anggota
 
 8. **Pengajuan Peminjaman**
    - **Aksi**: Klik tombol `Submit`.
-   - **Ekspektasi**: Sistem memproses peminjaman dan menyimpan transaksi peminjaman.
+   - **Ekspektasi**: Sistem memproses peminjaman, menampilkan pesan sukses, dan menyimpan transaksi peminjaman.
 
 ---
 
-### **Hasil yang Diharapkan**
+### Hasil yang Diharapkan
 - Semua langkah berjalan lancar tanpa kesalahan atau bug.
 - Data anggota dan buku tercatat dengan benar sesuai pilihan pengguna.
 - Pesan kesalahan yang relevan muncul jika terjadi kesalahan input.
+
+---
+
+### Catatan Tambahan
+- **Validasi Input**: Pastikan teks pencarian case-insensitive.
+- **Penghapusan Buku**: Konfirmasi penghapusan diperlukan untuk menghindari penghapusan yang tidak disengaja.
+- **UI Responsif**: Sistem harus dapat diakses di perangkat dengan layar kecil (mobile-friendly).
