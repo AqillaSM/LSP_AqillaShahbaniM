@@ -49,7 +49,7 @@ namespace LSP_AqillaShahbaniM
 
                 dtBuku.Clear();
 
-                sqlQuery = "select ID_BOOK, TITLE as 'Judul Buku', AUTHOR as 'Penulis', STOK as 'Stok' from BOOK where DELETE_BOOK = 0 ;";
+                sqlQuery = "select ID_BOOK, TITLE as 'Judul_Buku', AUTHOR as 'Penulis', STOK as 'Stok' from BOOK where DELETE_BOOK = 0 ;";
                 dtBuku = DatabaseHelper.ExecuteQuery(sqlQuery);
                 dataGridPilihBuku.DataSource = dtBuku;
             }

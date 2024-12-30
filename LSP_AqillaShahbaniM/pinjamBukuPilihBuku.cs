@@ -94,13 +94,13 @@ namespace LSP_AqillaShahbaniM
 
                 // Refresh data
                 dtBukuPilihan.Clear();
-                sqlQuery = "SELECT B.TITLE AS 'Judul Buku', B.AUTHOR AS 'Penulis' FROM BOOK_PEMINJAMAN BP JOIN BOOK B ON BP.ID_BOOK = B.ID_BOOK WHERE BP.ID_PEMINJAMAN = '" + idPeminjaman + "';";
+                sqlQuery = "SELECT B.TITLE AS 'Judul_Buku', B.AUTHOR AS 'Penulis' FROM BOOK_PEMINJAMAN BP JOIN BOOK B ON BP.ID_BOOK = B.ID_BOOK WHERE BP.ID_PEMINJAMAN = '" + idPeminjaman + "';";
                 dtBukuPilihan = DatabaseHelper.ExecuteQuery(sqlQuery);
                 dataGridDaftarBukuPilihan.DataSource = dtBukuPilihan;
                 DataHelper.fillDataGrid(dataGridDaftarBukuPilihan);
 
                 dtBukuPerpustakaan.Clear();
-                sqlQuery = "SELECT ID_BOOK, TITLE AS 'Judul Buku', AUTHOR AS 'Penulis' FROM BOOK WHERE STOK > 0;";
+                sqlQuery = "SELECT ID_BOOK, TITLE AS 'Judul_Buku', AUTHOR AS 'Penulis' FROM BOOK WHERE STOK > 0;";
                 dtBukuPerpustakaan = DatabaseHelper.ExecuteQuery(sqlQuery);
                 dataGridDaftarBukuPerpus.DataSource = dtBukuPerpustakaan;
                 DataHelper.fillDataGrid(dataGridDaftarBukuPerpus);
@@ -116,7 +116,7 @@ namespace LSP_AqillaShahbaniM
         {
             if (dataGridDaftarBukuPilihan.SelectedRows.Count > 0)
             {
-                string judulBuku = dataGridDaftarBukuPilihan.SelectedRows[0].Cells["Judul Buku"].Value.ToString();
+                string judulBuku = dataGridDaftarBukuPilihan.SelectedRows[0].Cells["Judul_Buku"].Value.ToString();
 
                 sqlQuery = "DELETE BP FROM BOOK_PEMINJAMAN BP JOIN BOOK B ON BP.ID_BOOK = B.ID_BOOK WHERE B.TITLE = '" + judulBuku + "' AND BP.ID_PEMINJAMAN = '" + idPeminjaman + "';";
                 DatabaseHelper.ExecuteQuery(sqlQuery);
@@ -126,14 +126,14 @@ namespace LSP_AqillaShahbaniM
 
                 dtBukuPilihan.Clear();
 
-                sqlQuery = "SELECT  B.TITLE AS 'Judul Buku', B.AUTHOR AS 'Penulis' FROM  BOOK_PEMINJAMAN BP JOIN  BOOK B ON BP.ID_BOOK = B.ID_BOOK JOIN PEMINJAMAN P ON BP.ID_PEMINJAMAN = P.ID_PEMINJAMAN WHERE BP.ID_PEMINJAMAN = '" + idPeminjaman + "';";
+                sqlQuery = "SELECT  B.TITLE AS 'Judul_Buku', B.AUTHOR AS 'Penulis' FROM  BOOK_PEMINJAMAN BP JOIN  BOOK B ON BP.ID_BOOK = B.ID_BOOK JOIN PEMINJAMAN P ON BP.ID_PEMINJAMAN = P.ID_PEMINJAMAN WHERE BP.ID_PEMINJAMAN = '" + idPeminjaman + "';";
                 dtBukuPilihan = DatabaseHelper.ExecuteQuery(sqlQuery);
                 dataGridDaftarBukuPilihan.DataSource = dtBukuPilihan;
                 DataHelper.fillDataGrid(dataGridDaftarBukuPilihan);
 
                 dtBukuPerpustakaan.Clear();
 
-                sqlQuery = "select ID_BOOK, TITLE as 'Judul Buku', AUTHOR as 'Penulis' from BOOK where STOK > 0;";
+                sqlQuery = "select ID_BOOK, TITLE as 'Judul_Buku', AUTHOR as 'Penulis' from BOOK where STOK > 0;";
                 dtBukuPerpustakaan = DatabaseHelper.ExecuteQuery(sqlQuery);
                 dataGridDaftarBukuPerpus.DataSource = dtBukuPerpustakaan;
                 DataHelper.fillDataGrid(dataGridDaftarBukuPerpus);
