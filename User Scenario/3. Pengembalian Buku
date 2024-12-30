@@ -1,0 +1,21 @@
+Deskripsi  
+Pengujian dilakukan untuk memastikan proses pengembalian buku berjalan sesuai alur yang diharapkan, termasuk pencarian data anggota, verifikasi data peminjaman, dan pengembalian buku ke data perpustakaan.
+
+Langkah-Langkah  
+
+1. Pencarian Data Pengembali  
+   - Aksi: Masukkan teks `Aqilla` ke dalam textbox pencarian nama pengembali buku.  
+   - Ekspektasi: Sistem menampilkan hasil pencarian anggota, termasuk nama "Aqilla Shahbani".
+
+2. Pemilihan Pengembali  
+   - Aksi: Pilih baris dengan nama "Aqilla Shahbani" pada tabel di kolom paling kiri.  
+   - Ekspektasi: Sistem menampilkan detail anggota yang dipilih.
+
+3. Melihat Detail Peminjaman  
+   - Aksi: Klik tombol `Detail Peminjaman`.  
+   - Ekspektasi: Sistem menampilkan daftar buku yang sedang dipinjam oleh anggota tersebut.
+
+4. Verifikasi dan Pengembalian Buku  
+   - Aksi: Periksa data buku yang dipinjam dan pastikan data sudah benar.  
+   - Aksi: Klik tombol `Submit`.  
+   - Ekspektasi: Buku yang dikembalikan akan kembali masuk ke data perpustakaan, dan sistem menampilkan pesan sukses pengembalian buku.
