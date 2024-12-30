@@ -36,7 +36,7 @@ namespace LSP_AqillaShahbaniM
 
         private void buttonPilihAnggota_Click(object sender, EventArgs e)
         {
-            if (dataGridPilihMember.SelectedRows.Count > 0) // Pastikan ada baris yang dipilih
+            if (dataGridPilihMember.SelectedRows.Count > 0)
             {
                 string idCustomer = dataGridPilihMember.SelectedRows[0].Cells["ID_CUSTOMER"].Value.ToString();
 

@@ -57,7 +57,6 @@ namespace LSP_AqillaShahbaniM
             string alamat = textBoxAlamat.Text.Trim();
             string noHp = textBoxNoHP.Text.Trim();
 
-            // Validasi input
             if (string.IsNullOrEmpty(nama) || string.IsNullOrEmpty(alamat) || string.IsNullOrEmpty(noHp))
             {
                 MessageBox.Show("Semua kolom harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -77,7 +76,6 @@ namespace LSP_AqillaShahbaniM
             string alamat = textBoxAlamat.Text.Trim();
             string noHp = textBoxNoHP.Text.Trim();
 
-            // Validasi input
             if (string.IsNullOrEmpty(nama) || string.IsNullOrEmpty(alamat) || string.IsNullOrEmpty(noHp))
             {
                 MessageBox.Show("Semua kolom harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);

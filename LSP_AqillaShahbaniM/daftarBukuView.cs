@@ -38,9 +38,8 @@ namespace LSP_AqillaShahbaniM
 
         private void buttonHapusBuku_Click(object sender, EventArgs e)
         {
-            if (dataGridPilihBuku.SelectedRows.Count > 0) // Pastikan ada baris yang dipilih
+            if (dataGridPilihBuku.SelectedRows.Count > 0)
             {
-                // Ambil nilai ID_CUSTOMER dari baris yang dipilih
                 string idBook = dataGridPilihBuku.SelectedRows[0].Cells["ID_BOOK"].Value.ToString();
 
 
@@ -61,9 +60,9 @@ namespace LSP_AqillaShahbaniM
 
         private void buttonEditBuku_Click(object sender, EventArgs e)
         {
-            if (dataGridPilihBuku.SelectedRows.Count > 0) // Pastikan ada baris yang dipilih
+            if (dataGridPilihBuku.SelectedRows.Count > 0) 
             {
-                // Ambil nilai ID_CUSTOMER dari baris yang dipilih
+               
                 string idBook = dataGridPilihBuku.SelectedRows[0].Cells["ID_BOOK"].Value.ToString();
 
                 navigationHelper.NavigateToTambahEditBuku(this, idBook);

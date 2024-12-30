@@ -57,7 +57,7 @@ namespace LSP_AqillaShahbaniM
             string penulis = textBoxPenulis.Text.Trim();
             string stok = textBoxStok.Text.Trim();
 
-            // Validasi input
+
             if (string.IsNullOrEmpty(judul) || string.IsNullOrEmpty(penulis) || string.IsNullOrEmpty(stok))
             {
                 MessageBox.Show("Semua kolom harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);

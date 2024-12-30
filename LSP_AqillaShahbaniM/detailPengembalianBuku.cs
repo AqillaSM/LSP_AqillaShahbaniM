@@ -18,8 +18,6 @@ namespace LSP_AqillaShahbaniM
         DataTable dtDetailPeminjaman = new DataTable();
         DataTable dtDataDiri = new DataTable();
         private NavigationHelper navigationHelper;
-
-        // Constructor untuk menerima idPeminjaman
         public detailPengembalianBuku(string idPeminjaman)
         {
             InitializeComponent();
@@ -53,16 +51,13 @@ namespace LSP_AqillaShahbaniM
 
             try
             {
-                // File tujuan
                 string filePath = "history_peminjaman.txt";
 
-                // Data yang akan disimpan
                 string content = $"Nama: {dtDataDiri.Rows[0][0]}\n" +
                                  $"Alamat: {dtDataDiri.Rows[0][1]}\n" +
                                  $"Nomor Handphone: {dtDataDiri.Rows[0][2]}\n" +
                                  $"Status Peminjaman: Sudah dikembalikan";
 
-                // Tulis ke file
                 System.IO.File.WriteAllText(filePath, content);
 
                 MessageBox.Show("Data berhasil disimpan ke file!", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -74,13 +69,10 @@ namespace LSP_AqillaShahbaniM
 
             try
             {
-                // File sumber
                 string filePath = "history_peminjaman.txt";
 
-                // Cek apakah file ada
                 if (System.IO.File.Exists(filePath))
                 {
-                    // Baca dari file
                     string content = System.IO.File.ReadAllText(filePath);
                     MessageBox.Show(content, "Data dari File", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

@@ -38,9 +38,9 @@ namespace LSP_AqillaShahbaniM
 
         private void buttonHapusAnggota_Click(object sender, EventArgs e)
         {
-            if (dataGridPilihMember.SelectedRows.Count > 0) // Pastikan ada baris yang dipilih
+            if (dataGridPilihMember.SelectedRows.Count > 0) 
             {
-                // Ambil nilai ID_CUSTOMER dari baris yang dipilih
+                
                 string idCustomer = dataGridPilihMember.SelectedRows[0].Cells["ID_CUSTOMER"].Value.ToString();
 
                 sqlQuery = "UPDATE CUSTOMER SET DELETE_CUSTOMER = 1 WHERE ID_CUSTOMER = '" + idCustomer + "';";
@@ -60,9 +60,9 @@ namespace LSP_AqillaShahbaniM
 
         private void buttonEditAnggota_Click(object sender, EventArgs e)
         {
-            if (dataGridPilihMember.SelectedRows.Count > 0) // Pastikan ada baris yang dipilih
+            if (dataGridPilihMember.SelectedRows.Count > 0)
             {
-                // Ambil nilai ID_CUSTOMER dari baris yang dipilih
+
                 string idCustomer = dataGridPilihMember.SelectedRows[0].Cells["ID_CUSTOMER"].Value.ToString();
 
                 navigationHelper.NavigateToTambahEditMember(this, idCustomer);

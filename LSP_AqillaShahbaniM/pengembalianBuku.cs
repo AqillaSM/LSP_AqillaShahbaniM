@@ -33,7 +33,7 @@ namespace LSP_AqillaShahbaniM
 
         private void buttonDetailPeminjaman_Click(object sender, EventArgs e)
         {
-            if (dataGridPilihPinjaman.SelectedRows.Count > 0) // Pastikan ada baris yang dipilih
+            if (dataGridPilihPinjaman.SelectedRows.Count > 0) 
             {
                 string idPeminjaman = dataGridPilihPinjaman.SelectedRows[0].Cells["ID_PEMINJAMAN"].Value.ToString();
 

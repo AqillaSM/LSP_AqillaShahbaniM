@@ -89,17 +89,14 @@ namespace LSP_AqillaShahbaniM
                     return;
                 }
 
-                // Tambahkan ID buku ke array
                 selectedBooks.Add(idBook);
 
-                // Operasi database tetap dijalankan
                 sqlQuery = "INSERT INTO BOOK_PEMINJAMAN (ID_BOOK, ID_PEMINJAMAN) VALUES ('" + idBook + "', '" + idPeminjaman + "');";
                 DatabaseHelper.ExecuteQuery(sqlQuery);
 
                 sqlQuery = "UPDATE BOOK SET STOK = STOK - 1 WHERE ID_BOOK = '" + idBook + "';";
                 DatabaseHelper.ExecuteQuery(sqlQuery);
 
-                // Refresh data
                 dtBukuPilihan.Clear();
                 sqlQuery = "SELECT B.TITLE AS 'Judul_Buku', B.AUTHOR AS 'Penulis' FROM BOOK_PEMINJAMAN BP JOIN BOOK B ON BP.ID_BOOK = B.ID_BOOK WHERE BP.ID_PEMINJAMAN = '" + idPeminjaman + "';";
                 dtBukuPilihan = DatabaseHelper.ExecuteQuery(sqlQuery);
