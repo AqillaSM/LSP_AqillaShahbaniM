@@ -32,4 +32,4 @@ Proyek ini adalah perangkat lunak manajemen perpustakaan yang dirancang untuk me
 ### 3. *Model Data Fisik (PDM)*
    PDM menyediakan implementasi detail dari basis data, termasuk tabel, kolom, dan tipe data.
 
-   ![Model Data Fisik](./assets/PDM.pnd)
+   ![Model Data Fisik](./assets/PDM.png)
