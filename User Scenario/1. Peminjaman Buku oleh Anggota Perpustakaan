@@ -1,62 +1,44 @@
-# User Testing: Peminjaman Buku oleh Anggota Perpustakaan
+Deskripsi
+Pengujian dilakukan untuk memastikan proses peminjaman buku oleh seorang anggota berjalan sesuai alur yang diharapkan, termasuk fitur pencarian, pemilihan buku, penambahan buku ke daftar, penghapusan buku dari daftar, dan pengajuan peminjaman.
 
-### Deskripsi
-Pengujian ini bertujuan untuk memastikan proses peminjaman buku oleh seorang anggota berjalan sesuai alur yang diharapkan, mencakup pencarian anggota, pemilihan buku, penghapusan buku dari daftar, dan pengajuan peminjaman.
+Langkah-Langkah
 
----
+1. Memulai Proses Peminjaman  
+   - Aksi: Klik tombol `Peminjaman Buku` pada panel menu disamping kiri.  
+   - Ekspektasi: Sistem menampilkan dialog atau halaman untuk memulai proses peminjaman.
 
-### Langkah-Langkah
+2. Verifikasi Keanggotaan  
+   - Aksi: Klik tombol `Ya` pada pertanyaan "Apakah Anda seorang anggota?".  
+   - Ekspektasi: Sistem menampilkan form pencarian anggota.
 
-1. **Memulai Proses Peminjaman**
-   - **Aksi**: Klik tombol `Peminjaman Buku`.
-   - **Ekspektasi**: Sistem menampilkan dialog atau halaman untuk memulai proses peminjaman.
+3. Pencarian Anggota  
+   - Aksi: Masukkan teks `Emma` ke dalam textbox pencarian.  
+   - Ekspektasi: Sistem menampilkan hasil pencarian anggota, termasuk nama "Emma Wilson".
 
-2. **Verifikasi Keanggotaan**
-   - **Aksi**: Klik tombol `Ya` pada pertanyaan "Apakah Anda seorang anggota?".
-   - **Ekspektasi**: Sistem menampilkan form pencarian anggota.
+4. Pemilihan Anggota  
+   - Aksi: Pilih baris dengan nama "Emma Wilson" pada tabel di kolom paling kiri.  
+   - Aksi: Klik tombol `Pilih Anggota`.  
+   - Ekspektasi: Sistem menampilkan nama anggota yang dipilih dan menampilkan daftar buku perpustakaan.
 
-3. **Pencarian Anggota**
-   - **Aksi**: Masukkan teks `Emma` ke dalam textbox pencarian.
-   - **Ekspektasi**: Sistem menampilkan hasil pencarian anggota, termasuk nama "Emma Wilson".
+5. Pencarian Buku (The Great Gatsby)  
+   - Aksi: Masukkan teks `The` ke dalam textbox pencarian.  
+   - Ekspektasi: Sistem menampilkan hasil pencarian buku, termasuk "The Great Gatsby".  
+   - Aksi: Pilih baris dengan nama "The Great Gatsby" pada tabel di kolom paling kiri.  
+   - Aksi: Klik tombol `Tambah Buku`.  
+   - Ekspektasi: Buku "The Great Gatsby" ditambahkan ke daftar buku yang dipilih.
 
-4. **Pemilihan Anggota**
-   - **Aksi**: Pilih baris dengan nama "Emma Wilson" pada tabel di kolom paling kiri.
-   - **Aksi**: Klik tombol `Pilih Anggota`.
-   - **Ekspektasi**: Sistem menampilkan nama anggota yang dipilih dan menampilkan daftar buku perpustakaan.
+6. Pencarian Buku (Pride and Prejudice)  
+   - Aksi: Masukkan teks `Pride` ke dalam textbox pencarian.  
+   - Ekspektasi: Sistem menampilkan hasil pencarian buku, termasuk "Pride and Prejudice".  
+   - Aksi: Pilih baris dengan nama "Pride and Prejudice" pada tabel di kolom paling kiri.  
+   - Aksi: Klik tombol `Tambah Buku`.  
+   - Ekspektasi: Buku "Pride and Prejudice" ditambahkan ke daftar buku yang dipilih.
 
-5. **Pencarian Buku (The Great Gatsby)**
-   - **Aksi**: Masukkan teks `The` ke dalam textbox pencarian.
-   - **Ekspektasi**: Sistem menampilkan hasil pencarian buku, termasuk "The Great Gatsby".
-   - **Aksi**: Pilih baris dengan nama "The Great Gatsby" pada tabel di kolom paling kiri.
-   - **Aksi**: Klik tombol `Tambah Buku`.
-   - **Ekspektasi**: Buku "The Great Gatsby" ditambahkan ke daftar buku yang dipilih.
+7. Penghapusan Buku dari Daftar  
+   - Aksi: Pilih baris dengan nama "Pride and Prejudice" pada tabel daftar buku yang dipilih.  
+   - Aksi: Klik tombol `Hapus Buku`.  
+   - Ekspektasi: Buku "Pride and Prejudice" dihapus dari daftar buku yang dipilih.
 
-6. **Pencarian Buku (Pride and Prejudice)**
-   - **Aksi**: Masukkan teks `Pride` ke dalam textbox pencarian.
-   - **Ekspektasi**: Sistem menampilkan hasil pencarian buku, termasuk "Pride and Prejudice".
-   - **Aksi**: Pilih baris dengan nama "Pride and Prejudice" pada tabel di kolom paling kiri.
-   - **Aksi**: Klik tombol `Tambah Buku`.
-   - **Ekspektasi**: Buku "Pride and Prejudice" ditambahkan ke daftar buku yang dipilih.
-
-7. **Penghapusan Buku dari Daftar**
-   - **Aksi**: Pilih baris dengan nama "Pride and Prejudice" pada tabel daftar buku yang dipilih.
-   - **Aksi**: Klik tombol `Hapus Buku`.
-   - **Ekspektasi**: Buku "Pride and Prejudice" dihapus dari daftar buku yang dipilih.
-
-8. **Pengajuan Peminjaman**
-   - **Aksi**: Klik tombol `Submit`.
-   - **Ekspektasi**: Sistem memproses peminjaman, menampilkan pesan sukses, dan menyimpan transaksi peminjaman.
-
----
-
-### Hasil yang Diharapkan
-- Semua langkah berjalan lancar tanpa kesalahan atau bug.
-- Data anggota dan buku tercatat dengan benar sesuai pilihan pengguna.
-- Pesan kesalahan yang relevan muncul jika terjadi kesalahan input.
-
----
-
-### Catatan Tambahan
-- **Validasi Input**: Pastikan teks pencarian case-insensitive.
-- **Penghapusan Buku**: Konfirmasi penghapusan diperlukan untuk menghindari penghapusan yang tidak disengaja.
-- **UI Responsif**: Sistem harus dapat diakses di perangkat dengan layar kecil (mobile-friendly).
+8. Pengajuan Peminjaman  
+   - Aksi: Klik tombol `Submit`.  
+   - Ekspektasi: Sistem memproses peminjaman, menampilkan pesan sukses, dan menyimpan transaksi peminjaman.
