@@ -1,0 +1,43 @@
+Deskripsi  
+Pengujian dilakukan untuk memastikan fitur melihat daftar, menambah, menghapus, dan mengedit buku berjalan sesuai alur yang diharapkan, termasuk tampilan daftar buku, manipulasi data buku, dan penyimpanan perubahan.
+
+Langkah-Langkah  
+
+1. Memulai Proses Melihat Daftar Buku  
+   - Aksi: Klik tombol `Daftar Buku` pada panel menu di samping kiri.  
+   - Ekspektasi: Sistem menampilkan halaman untuk melihat daftar buku.
+
+2. Menampilkan Daftar Buku  
+   - Ekspektasi: Sistem menampilkan list buku dengan data terbaru.
+
+3. Penambahan Buku  
+   - Aksi: Klik tombol `Tambah Buku`.  
+   - Ekspektasi: Sistem menampilkan form untuk menambahkan buku.
+
+4. Mengisi Form Penambahan Buku  
+   - Aksi: Isi textbox `Judul Buku` dengan teks `a`.  
+   - Aksi: Isi textbox `Penulis` dengan teks `b`.  
+   - Aksi: Isi textbox `Stok` dengan angka `3`.  
+
+5. Menyimpan Buku Baru  
+   - Aksi: Klik tombol `Tambah Buku`.  
+   - Ekspektasi: Buku baru ditambahkan ke database, dan sistem kembali menampilkan list buku dengan data terbaru.
+
+6. Menghapus Buku  
+   - Aksi: Pilih baris dengan judul buku `a` pada tabel di kolom paling kiri.  
+   - Aksi: Klik tombol `Hapus Buku`.  
+   - Ekspektasi: Buku tersebut dihapus dari database, dan sistem kembali menampilkan list buku dengan data terbaru.
+
+7. Pencarian Buku  
+   - Aksi: Masukkan teks `To` ke dalam textbox pencarian.  
+   - Ekspektasi: Sistem menampilkan hasil pencarian buku yang sesuai, termasuk "To Kill a Mockingbird".
+
+8. Mengedit Buku  
+   - Aksi: Pilih baris dengan judul buku `To Kill a Mockingbird` pada tabel di kolom paling kiri.  
+   - Aksi: Klik tombol `Edit Buku`.  
+   - Ekspektasi: Sistem menampilkan form untuk mengedit data buku.
+
+9. Mengubah Data Buku  
+   - Aksi: Ubah nilai textbox `Stok` menjadi `20`.  
+   - Aksi: Klik tombol `Edit Buku`.  
+   - Ekspektasi: Perubahan data buku disimpan, dan sistem kembali menampilkan list buku dengan data terbaru.
