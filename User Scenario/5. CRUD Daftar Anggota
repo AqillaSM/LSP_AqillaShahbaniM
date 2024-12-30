@@ -6,38 +6,47 @@ Langkah-Langkah
 1. Memulai Proses Melihat Daftar Anggota  
    - Aksi: Klik tombol `Daftar Anggota` pada panel menu di samping kiri.  
    - Ekspektasi: Sistem menampilkan halaman untuk melihat daftar anggota.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 2. Menampilkan Daftar Anggota  
    - Ekspektasi: Sistem menampilkan list anggota dengan data terbaru.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 3. Penambahan Anggota  
    - Aksi: Klik tombol `Tambah Anggota`.  
    - Ekspektasi: Sistem menampilkan form untuk menambahkan anggota.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 4. Mengisi Form Penambahan Anggota  
    - Aksi: Isi textbox `Nama` dengan teks `a`.  
    - Aksi: Isi textbox `Alamat` dengan teks `b`.  
    - Aksi: Isi textbox `Nomor Handphone` dengan angka `3`.  
+   - Hasil Uji Coba Mandiri: Berhasil
 
 5. Menyimpan Anggota Baru  
    - Aksi: Klik tombol `Tambah Anggota`.  
    - Ekspektasi: Anggota baru ditambahkan ke database, dan sistem kembali menampilkan list anggota dengan data terbaru.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 6. Menghapus Anggota  
    - Aksi: Pilih baris dengan nama `a` pada tabel di kolom paling kiri.  
    - Aksi: Klik tombol `Hapus Anggota`.  
    - Ekspektasi: Anggota tersebut dihapus dari database, dan sistem kembali menampilkan list anggota dengan data terbaru.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 7. Pencarian Anggota  
    - Aksi: Masukkan teks `David` ke dalam textbox pencarian.  
    - Ekspektasi: Sistem menampilkan hasil pencarian anggota yang sesuai, termasuk "David Brown".
+   - Hasil Uji Coba Mandiri: Berhasil
 
 8. Mengedit Anggota  
    - Aksi: Pilih baris dengan nama `David Brown` pada tabel di kolom paling kiri.  
    - Aksi: Klik tombol `Edit Anggota`.  
    - Ekspektasi: Sistem menampilkan form untuk mengedit data anggota.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 9. Mengubah Data Anggota  
    - Aksi: Ubah nilai textbox `Alamat` menjadi `Surabaya`.  
    - Aksi: Klik tombol `Edit Anggota`.  
    - Ekspektasi: Perubahan data anggota disimpan, dan sistem kembali menampilkan list anggota dengan data terbaru.
+   - Hasil Uji Coba Mandiri: Berhasil
