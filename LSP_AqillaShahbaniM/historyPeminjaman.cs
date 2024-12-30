@@ -25,7 +25,7 @@ namespace LSP_AqillaShahbaniM
 
         private void historyPeminjaman_Load(object sender, EventArgs e)
         {
-            sqlQuery = "SELECT P.ID_PEMINJAMAN as 'ID_PEMINJAMAN', C.NAME_CUSTOMER AS 'Nama Member', P.TANGGAL_PEMINJAMAN AS 'Tanggal Pinjam', P.TANGGAL_PENGEMBALIAN AS 'Tanggal Kembali', CASE WHEN P.STATUS_PEMINJAMAN = 0 THEN 'Sudah Kembali' WHEN P.STATUS_PEMINJAMAN = 1 THEN 'Belum Kembali' ELSE 'Status Tidak Diketahui' END AS 'Status Peminjaman' FROM PEMINJAMAN P JOIN CUSTOMER C ON P.ID_CUSTOMER = C.ID_CUSTOMER;";
+            sqlQuery = "SELECT P.ID_PEMINJAMAN as 'ID_PEMINJAMAN', C.NAME_CUSTOMER AS 'Nama_Member', P.TANGGAL_PEMINJAMAN AS 'Tanggal Pinjam', P.TANGGAL_PENGEMBALIAN AS 'Tanggal Kembali', CASE WHEN P.STATUS_PEMINJAMAN = 0 THEN 'Sudah Kembali' WHEN P.STATUS_PEMINJAMAN = 1 THEN 'Belum Kembali' ELSE 'Status Tidak Diketahui' END AS 'Status Peminjaman' FROM PEMINJAMAN P JOIN CUSTOMER C ON P.ID_CUSTOMER = C.ID_CUSTOMER;";
             dtPeminjaman = DatabaseHelper.ExecuteQuery(sqlQuery);
             dataGridPilihPinjaman.DataSource = dtPeminjaman;
             DataHelper.fillDataGrid(dataGridPilihPinjaman);
@@ -33,7 +33,7 @@ namespace LSP_AqillaShahbaniM
 
         private void textBoxSearchPinjamanBuku_TextChanged(object sender, EventArgs e)
         {
-            DataHelper.SearchFilter(dtPeminjaman, "ID_PEMINJAMAN", textBoxSearchPinjamanBuku.Text, dataGridPilihPinjaman);
+            DataHelper.SearchFilter(dtPeminjaman, "Nama_Member", textBoxSearchPinjamanBuku.Text, dataGridPilihPinjaman);
         
         }
 
