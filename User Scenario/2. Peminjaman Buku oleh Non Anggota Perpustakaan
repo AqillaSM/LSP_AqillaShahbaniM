@@ -1,0 +1,41 @@
+Pengujian dilakukan untuk memastikan proses peminjaman buku oleh seorang non-anggota berjalan sesuai alur yang diharapkan, termasuk fitur pencarian, pemilihan buku, penambahan buku ke daftar, penghapusan buku dari daftar, dan pengajuan peminjaman.
+
+Langkah-Langkah  
+
+1. Memulai Proses Peminjaman  
+   - Aksi: Klik tombol `Peminjaman Buku` pada panel menu di samping kiri.  
+   - Ekspektasi: Sistem menampilkan dialog atau halaman untuk memulai proses peminjaman.
+
+2. Verifikasi Keanggotaan  
+   - Aksi: Klik tombol `Tidak` pada pertanyaan "Apakah Anda seorang anggota?".  
+   - Ekspektasi: Sistem menampilkan form pencarian anggota.
+
+3. Pengisian Data Anggota Baru  
+   - Aksi: Isi textbox nama dengan teks `Aqilla Shahbani`.  
+   - Aksi: Isi textbox alamat dengan teks `Surabaya`.  
+   - Aksi: Isi textbox nomor HP dengan teks `08123456`.  
+   - Aksi: Klik tombol `Tambah Anggota`.  
+   - Ekspektasi: Sistem menambahkan anggota baru ke daftar dan menampilkan data anggota yang baru ditambahkan.
+
+4. Pencarian Buku (The Great Gatsby)  
+   - Aksi: Masukkan teks `The` ke dalam textbox pencarian.  
+   - Ekspektasi: Sistem menampilkan hasil pencarian buku, termasuk "The Great Gatsby".  
+   - Aksi: Pilih baris dengan nama "The Great Gatsby" pada tabel di kolom paling kiri.  
+   - Aksi: Klik tombol `Tambah Buku`.  
+   - Ekspektasi: Buku "The Great Gatsby" ditambahkan ke daftar buku yang dipilih.
+
+5. Pencarian Buku (Pride and Prejudice)  
+   - Aksi: Masukkan teks `Pride` ke dalam textbox pencarian.  
+   - Ekspektasi: Sistem menampilkan hasil pencarian buku, termasuk "Pride and Prejudice".  
+   - Aksi: Pilih baris dengan nama "Pride and Prejudice" pada tabel di kolom paling kiri.  
+   - Aksi: Klik tombol `Tambah Buku`.  
+   - Ekspektasi: Buku "Pride and Prejudice" ditambahkan ke daftar buku yang dipilih.
+
+6. Penghapusan Buku dari Daftar  
+   - Aksi: Pilih baris dengan nama "Pride and Prejudice" pada tabel daftar buku yang dipilih.  
+   - Aksi: Klik tombol `Hapus Buku`.  
+   - Ekspektasi: Buku "Pride and Prejudice" dihapus dari daftar buku yang dipilih.
+
+7. Pengajuan Peminjaman  
+   - Aksi: Klik tombol `Submit`.  
+   - Ekspektasi: Sistem memproses peminjaman, menampilkan pesan sukses, dan menyimpan transaksi peminjaman.  
