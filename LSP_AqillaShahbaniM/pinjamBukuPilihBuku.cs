@@ -37,7 +37,14 @@ namespace LSP_AqillaShahbaniM
 
         private void buttonSubmitBuku_Click(object sender, EventArgs e)
         {
-            navigationHelper.NavigateToFormClose(this, new mainMenu());
+            if (dataGridDaftarBukuPilihan.Rows.Count == 0 || dataGridDaftarBukuPilihan.Rows[0].Cells[0].Value == null)
+            {
+                MessageBox.Show("Data tidak tersedia. Harap pilih buku terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                navigationHelper.NavigateToFormClose(this, new mainMenu());
+            }
         }
 
         private void pinjamBukuPilihBuku_Load(object sender, EventArgs e)
