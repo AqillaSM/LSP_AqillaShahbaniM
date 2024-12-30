@@ -23,19 +23,19 @@ Langkah-Langkah
 5. Pencarian Buku (The Great Gatsby)  
    - Aksi: Masukkan teks `The` ke dalam textbox pencarian.  
    - Ekspektasi: Sistem menampilkan hasil pencarian buku, termasuk "The Great Gatsby".  
-   - Aksi: Pilih baris dengan nama "The Great Gatsby" pada tabel di kolom paling kiri.  
+   - Aksi: Pilih baris dengan judul "The Great Gatsby" pada tabel di kolom paling kiri.  
    - Aksi: Klik tombol `Tambah Buku`.  
    - Ekspektasi: Buku "The Great Gatsby" ditambahkan ke daftar buku yang dipilih.
 
 6. Pencarian Buku (Pride and Prejudice)  
    - Aksi: Masukkan teks `Pride` ke dalam textbox pencarian.  
    - Ekspektasi: Sistem menampilkan hasil pencarian buku, termasuk "Pride and Prejudice".  
-   - Aksi: Pilih baris dengan nama "Pride and Prejudice" pada tabel di kolom paling kiri.  
+   - Aksi: Pilih baris dengan judul "Pride and Prejudice" pada tabel di kolom paling kiri.  
    - Aksi: Klik tombol `Tambah Buku`.  
    - Ekspektasi: Buku "Pride and Prejudice" ditambahkan ke daftar buku yang dipilih.
 
 7. Penghapusan Buku dari Daftar  
-   - Aksi: Pilih baris dengan nama "Pride and Prejudice" pada tabel daftar buku yang dipilih.  
+   - Aksi: Pilih baris dengan judul "Pride and Prejudice" pada tabel daftar buku yang dipilih.  
    - Aksi: Klik tombol `Hapus Buku`.  
    - Ekspektasi: Buku "Pride and Prejudice" dihapus dari daftar buku yang dipilih.
 
