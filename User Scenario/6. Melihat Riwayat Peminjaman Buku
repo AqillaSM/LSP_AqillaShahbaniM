@@ -6,22 +6,28 @@ Langkah-Langkah
 1. Memulai Proses Melihat Detail Peminjaman Buku  
    - Aksi: Klik tombol `Riwayat Peminjaman` pada panel menu di samping kiri.  
    - Ekspektasi: Sistem menampilkan halaman untuk melihat detail peminjaman buku.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 2. Menampilkan Daftar Peminjaman  
    - Ekspektasi: Sistem menampilkan list daftar pinjaman dengan data terbaru.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 3. Pencarian Data Peminjam  
    - Aksi: Masukkan teks `Alice` ke dalam textbox pencarian nama peminjam buku.  
    - Ekspektasi: Sistem menampilkan hasil pencarian, termasuk nama "Alice Johnson".
+   - Hasil Uji Coba Mandiri: Berhasil
 
 4. Pemilihan Data Peminjam  
    - Aksi: Pilih baris dengan nama "Alice Johnson" pada tabel di kolom paling kiri.  
    - Ekspektasi: Sistem menampilkan detail peminjaman yang terkait dengan anggota tersebut.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 5. Melihat Detail Peminjaman  
    - Aksi: Klik tombol `Detail Peminjaman`.  
    - Ekspektasi: Sistem menampilkan buku apa saja yang dipinjam, status pengembalian (sudah kembali atau belum), tanggal peminjaman, tanggal pengembalian yang harus dilakukan, serta detail peminjam seperti nama, alamat, dan nomor HP.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 6. Menyelesaikan Proses  
    - Aksi: Klik tombol `Selesai`.  
    - Ekspektasi: Sistem kembali ke halaman daftar peminjaman atau halaman utama, menandakan proses selesai.
+   - Hasil Uji Coba Mandiri: Berhasil
