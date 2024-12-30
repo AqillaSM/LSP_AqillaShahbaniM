@@ -6,19 +6,23 @@ Langkah-Langkah
 1. Memulai Proses Peminjaman  
    - Aksi: Klik tombol `Peminjaman Buku` pada panel menu disamping kiri.  
    - Ekspektasi: Sistem menampilkan dialog atau halaman untuk memulai proses peminjaman.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 2. Verifikasi Keanggotaan  
    - Aksi: Klik tombol `Ya` pada pertanyaan "Apakah Anda seorang anggota?".  
    - Ekspektasi: Sistem menampilkan form pencarian anggota.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 3. Pencarian Anggota  
    - Aksi: Masukkan teks `Emma` ke dalam textbox pencarian.  
    - Ekspektasi: Sistem menampilkan hasil pencarian anggota, termasuk nama "Emma Wilson".
+   - Hasil Uji Coba Mandiri: Berhasil
 
 4. Pemilihan Anggota  
    - Aksi: Pilih baris dengan nama "Emma Wilson" pada tabel di kolom paling kiri.  
    - Aksi: Klik tombol `Pilih Anggota`.  
    - Ekspektasi: Sistem menampilkan nama anggota yang dipilih dan menampilkan daftar buku perpustakaan.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 5. Pencarian Buku (The Great Gatsby)  
    - Aksi: Masukkan teks `The` ke dalam textbox pencarian.  
@@ -26,6 +30,7 @@ Langkah-Langkah
    - Aksi: Pilih baris dengan judul "The Great Gatsby" pada tabel di kolom paling kiri.  
    - Aksi: Klik tombol `Tambah Buku`.  
    - Ekspektasi: Buku "The Great Gatsby" ditambahkan ke daftar buku yang dipilih.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 6. Pencarian Buku (Pride and Prejudice)  
    - Aksi: Masukkan teks `Pride` ke dalam textbox pencarian.  
@@ -33,12 +38,15 @@ Langkah-Langkah
    - Aksi: Pilih baris dengan judul "Pride and Prejudice" pada tabel di kolom paling kiri.  
    - Aksi: Klik tombol `Tambah Buku`.  
    - Ekspektasi: Buku "Pride and Prejudice" ditambahkan ke daftar buku yang dipilih.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 7. Penghapusan Buku dari Daftar  
    - Aksi: Pilih baris dengan judul "Pride and Prejudice" pada tabel daftar buku yang dipilih.  
    - Aksi: Klik tombol `Hapus Buku`.  
    - Ekspektasi: Buku "Pride and Prejudice" dihapus dari daftar buku yang dipilih.
+   - Hasil Uji Coba Mandiri: Berhasil
 
 8. Pengajuan Peminjaman  
    - Aksi: Klik tombol `Submit`.  
    - Ekspektasi: Sistem memproses peminjaman, menampilkan pesan sukses, dan menyimpan transaksi peminjaman.
+   - Hasil Uji Coba Mandiri: Berhasil
