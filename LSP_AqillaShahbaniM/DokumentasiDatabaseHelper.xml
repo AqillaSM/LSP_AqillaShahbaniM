@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>LSP_AqillaShahbaniM</name>
+	</assembly>
+	<members>
+		<!-- Keterangan untuk kelas DatabaseHelper -->
+		<member name="T:LSP_AqillaShahbaniM.DatabaseHelper">
+			<summary>
+				Kelas helper untuk mengelola operasi database menggunakan MySQL.
+				Menyediakan metode untuk koneksi, eksekusi perintah, dan pengambilan data.
+			</summary>
+		</member>
+
+		<!-- Keterangan untuk properti ConnectionString -->
+		<member name="F:LSP_AqillaShahbaniM.DatabaseHelper.ConnectionString">
+			<summary>
+				String koneksi ke database MySQL.
+			</summary>
+		</member>
+
+		<!-- Keterangan untuk metode GetConnection -->
+		<member name="M:LSP_AqillaShahbaniM.DatabaseHelper.GetConnection">
+			<summary>
+				Mendapatkan koneksi baru ke database MySQL.
+			</summary>
+			<returns>
+				Objek <see cref="MySql.Data.MySqlClient.MySqlConnection"/> yang merepresentasikan koneksi ke database.
+			</returns>
+		</member>
+
+		<!-- Keterangan untuk metode ExecuteNonQuery -->
+		<member name="M:LSP_AqillaShahbaniM.DatabaseHelper.ExecuteNonQuery(System.String)">
+			<summary>
+				Mengeksekusi perintah SQL yang tidak mengembalikan data.
+				(INSERT, UPDATE, DELETE).
+			</summary>
+			<param name="query">Perintah SQL yang akan dieksekusi.</param>
+			<exception cref="MySql.Data.MySqlClient.MySqlException">
+				Jika terjadi kesalahan selama eksekusi query.
+			</exception>
+		</member>
+
+		<!-- Keterangan untuk metode ExecuteQuery -->
+		<member name="M:LSP_AqillaShahbaniM.DatabaseHelper.ExecuteQuery(System.String)">
+			<summary>
+				Mengeksekusi perintah SQL yang mengembalikan data dalam bentuk <see cref="System.Data.DataTable"/>.
+				(SELECT).
+			</summary>
+			<param name="query">Perintah SQL yang akan dieksekusi.</param>
+			<returns>
+				Objek <see cref="System.Data.DataTable"/> yang berisi data hasil eksekusi query.
+			</returns>
+			<exception cref="MySql.Data.MySqlClient.MySqlException">
+				Jika terjadi kesalahan selama eksekusi query.
+			</exception>
+		</member>
+	</members>
+</doc>
