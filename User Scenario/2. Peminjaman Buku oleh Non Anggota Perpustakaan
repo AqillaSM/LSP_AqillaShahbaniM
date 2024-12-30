@@ -9,7 +9,7 @@ Langkah-Langkah
 
 2. Verifikasi Keanggotaan  
    - Aksi: Klik tombol `Tidak` pada pertanyaan "Apakah Anda seorang anggota?".  
-   - Ekspektasi: Sistem menampilkan form pencarian anggota.
+   - Ekspektasi: Sistem menampilkan form penambahan anggota.
    - Hasil Uji Coba Mandiri: Berhasil
 
 3. Pengisian Data Anggota Baru  
