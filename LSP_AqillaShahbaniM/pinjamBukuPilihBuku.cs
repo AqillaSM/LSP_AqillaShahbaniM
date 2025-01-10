@@ -129,6 +129,7 @@ namespace LSP_AqillaShahbaniM
                 DatabaseHelper.ExecuteQuery(sqlQuery);
 
                 dtBukuPilihan.Clear();
+                selectedBooks.Clear();
 
                 sqlQuery = "SELECT  B.TITLE AS 'Judul_Buku', B.AUTHOR AS 'Penulis' FROM  BOOK_PEMINJAMAN BP JOIN  BOOK B ON BP.ID_BOOK = B.ID_BOOK JOIN PEMINJAMAN P ON BP.ID_PEMINJAMAN = P.ID_PEMINJAMAN WHERE BP.ID_PEMINJAMAN = '" + idPeminjaman + "';";
                 dtBukuPilihan = DatabaseHelper.ExecuteQuery(sqlQuery);
