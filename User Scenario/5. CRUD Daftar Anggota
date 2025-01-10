@@ -20,7 +20,7 @@ Langkah-Langkah
 4. Mengisi Form Penambahan Anggota  
    - Aksi: Isi textbox `Nama` dengan teks `a`.  
    - Aksi: Isi textbox `Alamat` dengan teks `b`.  
-   - Aksi: Isi textbox `Nomor Handphone` dengan angka `3`.  
+   - Aksi: Isi textbox `Nomor Handphone` dengan angka `123456`.  
    - Hasil Uji Coba Mandiri: Berhasil
 
 5. Menyimpan Anggota Baru  
